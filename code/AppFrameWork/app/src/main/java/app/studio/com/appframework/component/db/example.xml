@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database>
+    <dversion>1</dversion>
+    <dname>common</dname>
+    <table>
+        <tname>commondbVer</tname>
+        <field>
+            <fname>_ID</fname>
+            <ftype>INTEGER</ftype>
+            <fobligatory>PRIMARY KEY AUTOINCREMENT</fobligatory>
+        </field>
+        <field>
+            <fname>dbVer</fname>
+            <ftype>TEXT</ftype>
+            <fobligatory></fobligatory>
+        </field>
+        <field>
+            <fname>desc</fname>
+            <ftype>TEXT</ftype>
+            <fobligatory>NOT NULL DEFAULT ''</fobligatory>
+        </field>
+    </table>
+</database>

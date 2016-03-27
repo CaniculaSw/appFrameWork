@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<beauties count ="2">    
+    <beauty>    
+        <name>范冰冰</name>    
+        <age>28</age>
+        <films>
+	        <film>
+	           <name>a</name>
+	        </film>
+	        <film>
+	           <name>b</name>
+	        </film>
+	        <film>
+	          <name>c</name>
+	        </film>
+        </films>
+    </beauty>    
+    <beauty>    
+        <name>杨幂</name>    
+        <age>23</age>
+        <films>
+	        <film>
+	           <name>d</name>
+	        </film>
+	        <film>
+	           <name>e</name>
+	        </film>
+	        <film>
+	           <name>f</name>
+	        </film>
+        </films>   
+   </beauty>    
+</beauties>  
