@@ -351,4 +351,23 @@ public class StringUtil {
         }
         return stringBuilder.toString();
     }
+
+    public static byte[] hex2Bytes(String input) {
+        if (input == null || input.equals("")) {
+            return null;
+        }
+        input = input.toUpperCase();
+        int length = input.length() / 2;
+        char[] hexChars = input.toCharArray();
+        byte[] d = new byte[length];
+        for (int i = 0; i < length; i++) {
+            int pos = i * 2;
+            d[i] = (byte) (charToByte(hexChars[pos]) << 4 | charToByte(hexChars[pos + 1]));
+        }
+        return d;
+    }
+
+    private static byte charToByte(char c) {
+        return (byte) "0123456789ABCDEF".indexOf(c);
+    }
 }
